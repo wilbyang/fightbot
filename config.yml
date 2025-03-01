@@ -1,0 +1,11 @@
+listen_addr: localhost:8076
+routes:
+  - name: Service A
+    context: /geekbang
+    target: http://localhost:8801
+  - name: Service B
+    context: /juejin
+    target: http://localhost:8802
+  - name: Service C
+    context: /static
+    target: http://localhost:3001
